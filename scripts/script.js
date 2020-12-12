@@ -1,6 +1,6 @@
 var body = document.querySelector('body');
 var h1 = document.createElement('h1');
-h1.setAttribute('id', 'cronometro');
+h1.setAttribute('id', 'cronometer');
 body.appendChild(h1);
 
 let h = 0
@@ -24,6 +24,6 @@ setInterval(() => {
     h1.textContent = `| Days: ${days<10?'0'+ days:days} 
     | Hours: ${h < 10?'0'+ h:h} 
     | Minutes: ${m < 10?'0'+ m:m} 
-    | Secounds: ${s < 10?'0'+ s:s} |`
+    | Seconds: ${s < 10?'0'+ s:s} |`
     s++
 }, 1000);
