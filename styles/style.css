@@ -2,8 +2,39 @@
     font-family: 'DS-Digital';
     src: url('../fonts/DS-DIGI.TTF');
 }
+
 h1 {
-    font-family: 'DS-Digital';
+    /* font-family: 'DS-Digital'; */
+    font-family: 'Comic Sans', sans-serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    
+}
+
+.cronometro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+
+.days, .hours, .minutes, .seconds{
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.divH, .divD, .divM, .divS{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px white;
+    box-shadow: 1px 1px 5px gray;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    
+    
 }

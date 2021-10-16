@@ -21,9 +21,10 @@ setInterval(() => {
             }
         }
     }
-    h1.textContent = `| Days: ${days<10?'0'+ days:days} 
-    | Hours: ${h < 10?'0'+ h:h} 
-    | Minutes: ${m < 10?'0'+ m:m} 
-    | Seconds: ${s < 10?'0'+ s:s} |`
+    h1.innerHTML = 
+    "<div class='cronometro'><div class='divD'><label for='days'>Days</label><span class='days'>" + (days<10?'0'+ days:days) + "</span></div>" +
+    "<div class='divH'><label for='hours'>Hours</label><span class='hours'>" + (h < 10?'0'+ h:h) + "</span></div>"+
+    "<div class='divM'><label for='minutes'>Minutes</label><span class='minutes'>" + (m < 10?'0'+ m:m) + "</span></div>"+
+    "<div class='divS'<label for='seconds'>Seconds</label><span class='seconds'>" + (s < 10?'0'+ s:s) + "</span></div></div>"
     s++
 }, 1000);
